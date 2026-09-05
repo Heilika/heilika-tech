@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Heilika Ots</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heilika Ots — Portfolio</title>
 
-<style>
-
-body{
-margin:0;
-background:#eef2f6;
-display:flex;
-justify-content:center;
-padding:40px;
-font-family:Arial;
-}
-
-img{
-max-width:900px;
-width:100%;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-</style>
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">heilika.tech</p>
 
-<img src="cv.png">
+      <h1>Something new is being built here.</h1>
 
+      <p class="intro">
+        My new portfolio is currently under development.
+        In the meantime, feel free to fix a few bugs.
+      </p>
+    </section>
+
+    <section class="game-card">
+      <div class="game-header">
+        <div>
+          <p class="game-label">Mini game</p>
+          <h2>Catch the Bug 🐛</h2>
+        </div>
+
+        <div class="stats">
+          <span>Bugs fixed: <strong id="score">0</strong></span>
+          <span>Time: <strong id="time">30</strong>s</span>
+        </div>
+      </div>
+
+      <p class="game-description">
+        You have 30 seconds. Click the bugs as fast as you can.
+        But be careful — not everything that moves is a bug.
+      </p>
+
+      <button id="startButton" class="start-button">
+        Start game
+      </button>
+
+      <div id="gameArea" class="game-area">
+        <div class="game-message" id="gameMessage">
+          Ready when you are.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Built with curiosity, coffee and probably too many browser tabs.</p>
+
+      <div class="footer-links">
+        <a
+          href="https://www.linkedin.com/in/heilika-ots"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/Heilika"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
 </body>
-
 </html>
