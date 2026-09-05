@@ -1,78 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heilika Ots — Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heilika Ots — Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <main class="page">
-    <section class="hero">
-      <p class="eyebrow">heilika.tech</p>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">heilika.tech</p>
 
-      <h1>Something new is being built here.</h1>
+        <h1>Something new is being built here.</h1>
 
-      <p class="intro">
-        My new portfolio is currently under development.
-        In the meantime, feel free to fix a few bugs.
-      </p>
-    </section>
+        <p class="intro">
+            My personal website is currently under construction.
+            Soon, I'll be sharing projects, lessons learned and practical ideas
+            from my journey through tech, career change and everything in between.
+            Until then, feel free to fix a few bugs.
+        </p>
+      </section>
 
-    <section class="game-card">
-      <div class="game-header">
-        <div>
-          <p class="game-label">Mini game</p>
-          <h2>Catch the Bug 🐛</h2>
+      <section class="game-card">
+        <div class="game-header">
+          <div>
+            <p class="game-label">Mini game</p>
+            <h2>Catch the Bug 🐛</h2>
+          </div>
+
+          <div class="stats">
+            <span>Bugs fixed: <strong id="score">0</strong></span>
+            <span>Time: <strong id="time">30</strong>s</span>
+          </div>
         </div>
 
-        <div class="stats">
-          <span>Bugs fixed: <strong id="score">0</strong></span>
-          <span>Time: <strong id="time">30</strong>s</span>
+        <p class="game-description">
+          You have 30 seconds. Click the bugs as fast as you can. But be careful
+          — not everything that moves is a bug.
+        </p>
+
+        <button id="startButton" class="start-button">Start game</button>
+
+        <div id="gameArea" class="game-area">
+          <div class="game-message" id="gameMessage">Ready when you are.</div>
         </div>
-      </div>
+      </section>
 
-      <p class="game-description">
-        You have 30 seconds. Click the bugs as fast as you can.
-        But be careful — not everything that moves is a bug.
-      </p>
+      <footer>
+        <p>Built with curiosity, coffee and probably too many browser tabs.</p>
 
-      <button id="startButton" class="start-button">
-        Start game
-      </button>
+        <div class="footer-links">
+          <a
+            href="https://www.linkedin.com/in/heilika-ots"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
 
-      <div id="gameArea" class="game-area">
-        <div class="game-message" id="gameMessage">
-          Ready when you are.
+          <a href="https://github.com/Heilika" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
         </div>
-      </div>
-    </section>
+      </footer>
+    </main>
 
-    <footer>
-      <p>Built with curiosity, coffee and probably too many browser tabs.</p>
-
-      <div class="footer-links">
-        <a
-          href="https://www.linkedin.com/in/heilika-ots"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
-
-        <a
-          href="https://github.com/Heilika"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-      </div>
-    </footer>
-  </main>
-
-  <script src="game.js"></script>
-</body>
+    <script src="game.js"></script>
+  </body>
 </html>

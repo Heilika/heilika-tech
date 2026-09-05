@@ -77,12 +77,19 @@ function createTarget() {
     randomPosition(target);
   });
 }
+const displayTime = isCat ? 4000 : 1200;
+
+targetTimer = setTimeout(() => {
+  if (isPlaying && target.isConnected) {
+    createTarget();
+  }
+}, displayTime);
 
 function endGame() {
   isPlaying = false;
 
   clearInterval(timer);
-  clearInterval(targetTimer);
+  clearTimeout(targetTimer);
 
   removeTarget();
 
@@ -115,10 +122,6 @@ function startGame() {
   startButton.textContent = "Game running...";
 
   createTarget();
-
-  targetTimer = setInterval(() => {
-    createTarget();
-  }, 1200);
 
   timer = setInterval(() => {
     timeLeft -= 1;
